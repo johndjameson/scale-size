@@ -1,0 +1,70 @@
+// *************************************
+//
+//   Input
+//   -> This is an example structure
+//
+// *************************************
+
+.input
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.input-group
+  @extend .group
+  margin-bottom: $b-whitespace*2
+  position: relative
+  label
+    display: block
+    font-size: $b-fontSize-aa
+    font-weight: 700
+    margin-bottom: $b-whitespace
+
+.input-field
+  background-color: $c-background-light
+  border: $b-border
+  border-radius: $b-borderRadius
+  box-shadow: inset $b-boxShadow, $b-boxHighlight
+  padding: $b-whitespace/2
+  line-height: 1
+  width: 100%
+  &:focus
+    background-color: $c-invert
+    outline: 0
+
+.input-field--number
+  padding: $b-whitespace/4 0
+  position: absolute
+  right: 0
+  text-align: right
+  top: 0
+  width: auto
+
+.input-range
+  width: 100%
+
+.input-textarea
+  @extend .input-field
+  line-height: inherit
+  resize: none
+  width: 100%
+

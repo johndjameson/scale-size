@@ -1,0 +1,1350 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"c-b",
+				"c-background"
+			],
+			[
+				"b-bor",
+				"b-borderRadius"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"remo",
+				"remove"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"lo",
+				"loadImage"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"gall",
+				"gallery"
+			],
+			[
+				"dele",
+				"deletefile"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"na",
+				"nameval"
+			],
+			[
+				"nam",
+				"nameval"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"si",
+				"siblings"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"wi",
+				"willy-canvas"
+			],
+			[
+				"will",
+				"willy-canvas"
+			],
+			[
+				"gr",
+				"grid"
+			],
+			[
+				"i",
+				"import"
+			],
+			[
+				"cli",
+				"clientX"
+			],
+			[
+				"vl",
+				"validateForm"
+			],
+			[
+				"name",
+				"nameField"
+			],
+			[
+				"galle",
+				"gallery"
+			],
+			[
+				"web",
+				"webkit-transform"
+			],
+			[
+				"new",
+				"newImage"
+			],
+			[
+				"n",
+				"nameval"
+			],
+			[
+				"galler",
+				"gallery-image"
+			],
+			[
+				"save",
+				"saveImage"
+			],
+			[
+				"load",
+				"loadCanvas"
+			],
+			[
+				"f",
+				"filenames"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"c-primary",
+				"c-primary-dark"
+			],
+			[
+				"fade",
+				"fade-out	sass_function"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"b-bo",
+				"b-boxShadow"
+			],
+			[
+				"trasfor",
+				"webkit-transform"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"uplo",
+				"uploadImage"
+			],
+			[
+				"c-se",
+				"c-secondary"
+			],
+			[
+				"da",
+				"dataURL"
+			],
+			[
+				"ligh",
+				"lighten	sass_function"
+			],
+			[
+				"sta",
+				"stage"
+			],
+			[
+				"bru",
+				"brush"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"to",
+				"toDataURL"
+			],
+			[
+				"str",
+				"stroke"
+			],
+			[
+				"s",
+				"size"
+			],
+			[
+				"r",
+				"round"
+			],
+			[
+				"lin",
+				"lineCap"
+			],
+			[
+				"ac",
+				"activate"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"stage",
+				"stageRefresh"
+			],
+			[
+				"dr",
+				"draw"
+			],
+			[
+				"fi",
+				"fillStyle"
+			],
+			[
+				"d",
+				"draw"
+			],
+			[
+				"gri",
+				"gridArray"
+			],
+			[
+				"st",
+				"stage"
+			],
+			[
+				"req",
+				"requestAnimFrame"
+			],
+			[
+				"get",
+				"getContext"
+			],
+			[
+				"ha",
+				"hair"
+			],
+			[
+				"hai",
+				"hairs"
+			],
+			[
+				"mou",
+				"mousePos"
+			],
+			[
+				"fil",
+				"fillRect"
+			],
+			[
+				"con",
+				"concurrent"
+			],
+			[
+				"a",
+				"app"
+			],
+			[
+				"c",
+				"concurrent"
+			],
+			[
+				"css",
+				"cssmin"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"ex",
+				"expand"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mt",
+				"margin-top"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"has",
+				"has-annotations"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"lig",
+				"lighten	sass_function"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"border-bo",
+				"border-box"
+			],
+			[
+				"upda",
+				"updateProgress"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"local",
+				"localQuery"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"loc",
+				"localQuery"
+			],
+			[
+				"mysqu",
+				"mysql_query"
+			],
+			[
+				"mys",
+				"mysql_connect"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"in",
+				"inputForm"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"b-font",
+				"b-fontSize"
+			],
+			[
+				"grid-box",
+				"grid-box--desk1of3"
+			],
+			[
+				"b-fon",
+				"b-fontFamily-heading"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"b-fn",
+				"b-fontFamily-heading"
+			],
+			[
+				"gent",
+				"getElementById"
+			],
+			[
+				"pa",
+				"parseResponse"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"sub",
+				"submitButton"
+			],
+			[
+				"c-",
+				"c-small"
+			],
+			[
+				"font-s",
+				"font-style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"haml",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"th",
+				"Set Syntax: HTML"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/john/GitHub/scale-size/app/sass/modules/_button.sass",
+		"/Users/john/GitHub/scale-size/app/sass/core/_settings.sass",
+		"/Users/john/GitHub/scale-size/app/sass/application.sass",
+		"/Users/john/GitHub/scale-size/app/sass/core/_base.sass",
+		"/Users/john/GitHub/scale-size/app/sass/components/_row.sass",
+		"/Users/john/GitHub/scale-size/app/sass/core/_utilities.sass",
+		"/Users/john/GitHub/scale-size/app/sass/modules/_scale.sass",
+		"/Users/john/GitHub/scale-size/app/index.html",
+		"/Users/john/Downloads/Velositey_v1_CC/Read Me.txt",
+		"/Users/john/GitHub/scale-size/scale-size.sublime-project",
+		"/Users/john/GitHub/scale-size/README.md",
+		"/Users/john/GitHub/scale-size/app/sass/modules/_infoButton.sass",
+		"/Users/john/GitHub/scale-size/app/sass/components/_bucket.sass",
+		"/Users/john/GitHub/scale-size/app/sass/structures/_form.sass",
+		"/Users/john/GitHub/scale-size/app/sass/foundation/_base.sass",
+		"/Users/john/GitHub/scale-size/app/sass/generic/_card.sass",
+		"/Users/john/GitHub/scale-size/app/sass/foundation/_settings.sass",
+		"/Users/john/GitHub/scale-size/app/sass/foundation/_utilities.sass",
+		"/Users/john/GitHub/scale-size/app/sass/structures/_button.sass",
+		"/Users/john/GitHub/scale-size/app/sass/generic/_bucket.sass",
+		"/Users/john/GitHub/scale-size/app/sass/modules/_example.sass",
+		"/Users/john/GitHub/scale-size/app/js/main.js",
+		"/Users/john/GitHub/scale-size/app/sass/modules/_form.sass",
+		"/Users/john/GitHub/scale-size/package.json",
+		"/Users/john/GitHub/scale-size/Gruntfile.js",
+		"/Users/john/GitHub/scale-size/app/sass/structures/_example.sass",
+		"/Users/john/GitHub/scale-size/app/bower_components/jquery/src/var/concat.js",
+		"/Users/john/GitHub/scale-size/app/bower_components/jquery/src/core.js",
+		"/Users/john/GitHub/scale-size/app/bower_components/jquery/src/callbacks.js",
+		"/Users/john/GitHub/scale-size/bower.json",
+		"/Users/john/GitHub/scale-size/app/bower_components/jquery/src/traversing/var/rneedsContext.js",
+		"/Users/john/GitHub/scale-size/app/bower_components/jquery/src/effects.js",
+		"/Users/john/GitHub/scale-size/app/bower_components/jquery/src/selector.js",
+		"/Users/john/GitHub/johndjameson.com/Gruntfile.js",
+		"/Users/john/GitHub/scale-size/dist/css/main.min.css",
+		"/Users/john/GitHub/scale-size/app/sass/main.scss",
+		"/Users/john/GitHub/johndjameson.com/package.json",
+		"/Users/john/GitHub/scale-size/LICENSE.md",
+		"/Users/john/GitHub/scale-size/dist/index.html",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/modules/_brush.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/includes/gallery.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/modules/_gallery.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/includes/upload.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/includes/delete.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/Gruntfile.js",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/page_index.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/dist/css/styles.css",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/core/_helpers.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/js/application.js",
+		"/Users/john/Downloads/sketch-plugins-master/Symbols/README.md",
+		"/Users/john/Downloads/sketch-plugins-master/README.md",
+		"/Users/john/Dropbox/GRA 3803 Artpad Info/Joseph Brueggen/Joseph Brueggen.txt",
+		"/Users/john/Dropbox/GRA 3803 Artpad Info/John D Jameson/jameson-bio.txt",
+		"/Users/john/GitHub/scalin-it/Gruntfile.js",
+		"/Users/john/GitHub/scalin-it/app/robots.txt",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/wooly-willy.sublime-project",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/styles.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/core/_settings.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/package.json",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/modules/_button.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/generic/_example.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/index.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/upload.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/delete.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/gallery.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/dist/delete.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/modules/_input.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/modules/_willy.sass",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/Colorsublime/themes/Facebook.tmTheme",
+		"/Users/john/Library/Application Support/Sublime Text 3/Packages/User/Colorsublime/themes/Seahorse.tmTheme",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/modules/_icon.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/application.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/core/_content.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/core/_base.sass",
+		"/Applications/MAMP/htdocs/index.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/fonts/icomoon.woff",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/fonts/icomoon.svg",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/wooly-willy.sublime-workspace",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/dist/js/application.js",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/js/application.js",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/index.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_brush.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/app/_sass/application.css",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/dist/css/application.css",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/application.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/core/_settings.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/core/_base.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_icon.sass",
+		"/Users/john/GitHub/johndjameson.com/app/_sass/application.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/generic/_cell.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_willy.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_panel.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_btn.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_form.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_input.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/core/_helpers.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_gallery.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_example.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/_grid.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/core/_reset.scss",
+		"/Users/john/Downloads/fontello-022a800c/css/fontello-embedded.css",
+		"/Users/john/Downloads/icomoon/style.css",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/gallery.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/modules/_grid.sass",
+		"/Users/john/Downloads/fontello-022a800c/css/fontello.css",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/css/application.css",
+		"/Users/john/GitHub/johndjameson.com/app/_sass/core/_helpers.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/js/application-ck.js",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/upload.php",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/index.html",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 4503 - Rapid App/Projects/Project 2/js/reference.js",
+		"/Users/john/GitHub/mvcss/foundation/_settings.sass",
+		"/Users/john/Dropbox/School/2014 Spring/GRA 3803C/Projects/Project 3/flashgordon-critique.txt",
+		"/Users/john/Desktop/My-Grunt-Boilerplate-master/Gruntfile.js",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 3171 - Digital Humanities/Web Project/Gruntfile.js",
+		"/Users/john/GitHub/johndjameson.com/app/_layouts/default.html",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 3171 - Digital Humanities/Web Project/sass/core/_grid.sass",
+		"/Users/john/Dropbox/School/2014 Spring/DIG 3171 - Digital Humanities/Web Project/sass/application.sass",
+		"/Users/john/Desktop/My-Grunt-Boilerplate-master/tasks/options/connect.js",
+		"/Users/john/Desktop/My-Grunt-Boilerplate-master/tasks/options/watch.js",
+		"/Users/john/Desktop/jekyll/Gruntfile.js",
+		"/Users/john/GitHub/johndjameson.com/dist/js/application.js",
+		"/Users/john/GitHub/johndjameson.com/dist/js/application.min.js",
+		"/Users/john/GitHub/johndjameson.com/app/_sass/core/_settings.sass",
+		"/Users/john/Desktop/My-Grunt-Boilerplate-master/tasks/options/uglify.js",
+		"/Users/john/GitHub/johndjameson.com/dist/index.html",
+		"/Users/john/Desktop/My-Grunt-Boilerplate-master/tasks/dev.js",
+		"/Users/john/Desktop/My-Grunt-Boilerplate-master/index.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"dist",
+			"",
+			"this",
+			"_highlight.sass",
+			"",
+			"705b91",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"components",
+			"foundation",
+			"right",
+			"text-de",
+			"h1",
+			"_sass",
+			"svg",
+			"jekyll",
+			"yeoman",
+			"styles",
+			"newer",
+			"newwe",
+			"newer",
+			"deletef",
+			"deleteimage",
+			"save",
+			"delete",
+			";\n",
+			"valida",
+			"sass",
+			"mac",
+			"conso",
+			"webkit|moz",
+			"web",
+			"\\n\\n",
+			"\\n",
+			"draw",
+			"touch",
+			"index",
+			"console",
+			"stageref",
+			"refres",
+			"saveim",
+			"upload",
+			"group",
+			"name",
+			"brush",
+			"App",
+			"text",
+			"stageRefresh",
+			"draw",
+			"logo",
+			"concurr",
+			"post",
+			"report",
+			"ugli",
+			"connect",
+			"livere",
+			"port",
+			"local",
+			"keepal",
+			"serve",
+			".jekyll",
+			"check",
+			"webkit",
+			"moz-bo",
+			"::after",
+			"moz",
+			"expand",
+			"moz",
+			"stage",
+			"jshi",
+			"conca",
+			"csslin",
+			"watch",
+			"paddin",
+			"style sh",
+			"stylesheet",
+			"Altough",
+			"accross",
+			"better",
+			"bash",
+			"only",
+			"\\n",
+			"/n",
+			"\\n",
+			";",
+			"@import url(",
+			"|",
+			"overfl",
+			"-10",
+			"sidebar",
+			"box-sha",
+			"box-sa",
+			"thumnail",
+			"thumbnail",
+			"thumnail",
+			"box-s",
+			"button",
+			"aside",
+			"hover",
+			"thumb",
+			"after",
+			"size",
+			"box-",
+			".has-annotations>aside>(.annotations>ul>li)+.culture",
+			",&#",
+			"table",
+			" </",
+			"h3",
+			"h2",
+			"article",
+			"nee",
+			"h2",
+			"adler",
+			"p><p>",
+			"<p> ",
+			" </p>",
+			"</p>",
+			"\\n",
+			"<cent",
+			"&nbsp;",
+			"<p/><p>",
+			"\\n",
+			"<p>",
+			"<br>",
+			"center",
+			"<br>",
+			"smoothin",
+			"hidden",
+			"backface",
+			"</center>",
+			"<center>",
+			"<hr>",
+			"</Table>",
+			"/[Table]/gi",
+			"/[Table]/",
+			"<br>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"d14",
+			"099",
+			"900",
+			"888",
+			"555",
+			"222",
+			"",
+			"705b91",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "scale-size.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ssc",
+				"app/sass/modules/_scale.sass"
+			],
+			[
+				"app",
+				"app/sass/application.sass"
+			],
+			[
+				"set",
+				"app/sass/core/_settings.sass"
+			],
+			[
+				"bas",
+				"app/sass/core/_base.sass"
+			],
+			[
+				"ut",
+				"app/sass/core/_utilities.sass"
+			],
+			[
+				"row",
+				"app/sass/components/_row.sass"
+			],
+			[
+				"but",
+				"app/sass/modules/_button.sass"
+			],
+			[
+				"car",
+				"app/sass/generic/_card.sass"
+			],
+			[
+				"b",
+				"app/sass/structures/_button.sass"
+			],
+			[
+				"f",
+				"app/sass/structures/_form.sass"
+			],
+			[
+				"ex",
+				"app/sass/structures/_example.sass"
+			],
+			[
+				"ba",
+				"app/sass/foundation/_base.sass"
+			],
+			[
+				"base",
+				"app/sass/foundation/_base.sass"
+			],
+			[
+				"sett",
+				"app/sass/foundation/_settings.sass"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"help",
+				"app/_sass/core/_helpers.sass"
+			],
+			[
+				"page",
+				"app/page_index.php"
+			],
+			[
+				"gal",
+				"app/includes/gallery.php"
+			],
+			[
+				"brus",
+				"app/_sass/modules/_brush.sass"
+			],
+			[
+				"del",
+				"app/includes/delete.php"
+			],
+			[
+				"up",
+				"app/includes/upload.php"
+			],
+			[
+				"gun",
+				"Gruntfile.js"
+			],
+			[
+				"galphp",
+				"app/gallery.php"
+			],
+			[
+				"u",
+				"app/upload.php"
+			],
+			[
+				"gall",
+				"app/gallery.php"
+			],
+			[
+				"butt",
+				"app/_sass/modules/_button.sass"
+			],
+			[
+				"appl",
+				"app/js/application.js"
+			],
+			[
+				"input",
+				"app/_sass/modules/_input.sass"
+			],
+			[
+				"inpu",
+				"app/_sass/modules/_input.sass"
+			],
+			[
+				"inp",
+				"app/_sass/modules/_input.sass"
+			],
+			[
+				"ic",
+				"app/_sass/modules/_icon.sass"
+			],
+			[
+				"inu",
+				"app/_sass/modules/_input.sass"
+			],
+			[
+				"will",
+				"app/_sass/modules/_willy.sass"
+			],
+			[
+				"se",
+				"app/_sass/core/_settings.sass"
+			],
+			[
+				"js",
+				"app/js/application.js"
+			],
+			[
+				"wily",
+				"app/_sass/modules/_willy.sass"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"css",
+				"css/application.css"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"upl",
+				"upload.php"
+			],
+			[
+				"gr",
+				"css/_grid.sass"
+			],
+			[
+				"def",
+				"app/_layouts/default.html"
+			],
+			[
+				"appsas",
+				"app/_sass/application.sass"
+			],
+			[
+				"gri",
+				"app/_sass/modules/_grid.sass"
+			],
+			[
+				"hig",
+				"app/_sass/modules/_highlight-colors.scss"
+			],
+			[
+				"ay",
+				"sass/core/_layout.sass"
+			],
+			[
+				"post",
+				"sass/modules/_post.sass"
+			],
+			[
+				"hi",
+				"sass/modules/_highlight.sass"
+			],
+			[
+				"side",
+				"_posts/2014-01-27-responsive-sidenotes.md"
+			],
+			[
+				"pos",
+				"sass/modules/_post.sass"
+			],
+			[
+				"amper",
+				"sass/modules/_ampersand.sass"
+			],
+			[
+				"cont",
+				"sass/core/_content.sass"
+			],
+			[
+				"sto",
+				"sass/structures/_story.sass"
+			],
+			[
+				"tac",
+				"sass/components/_cell.sass"
+			],
+			[
+				"ap",
+				"css/application.sass"
+			],
+			[
+				"l",
+				"sass/core/_layout.sass"
+			],
+			[
+				"rest",
+				"sass/core/_reset.scss"
+			],
+			[
+				".md",
+				"_posts/2014-01-27-responsive-sidenotes.md"
+			],
+			[
+				"res",
+				"sass/core/_reset.scss"
+			],
+			[
+				"colo",
+				"sass/modules/_highlight-colors.scss"
+			],
+			[
+				"high",
+				"sass/modules/_highlight.sass"
+			],
+			[
+				"siden",
+				"_posts/2014-01-27-responsive-sidenotes.md"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"sass",
+				"sass/application.sass"
+			],
+			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				".js",
+				"js/jquery-1.10.2.min.js"
+			],
+			[
+				"ima",
+				"sass/modules/_image.sass"
+			],
+			[
+				"well",
+				"sass/modules/_well.sass"
+			],
+			[
+				"pre",
+				"sass/modules/_preview.sass"
+			],
+			[
+				"logo",
+				"sass/modules/_logo.sass"
+			],
+			[
+				"lis",
+				"sass/modules/_list.sass"
+			],
+			[
+				"de",
+				"_layouts/default.html"
+			],
+			[
+				"po",
+				"sass/modules/_post.sass"
+			],
+			[
+				"la",
+				"sass/core/_layout.sass"
+			],
+			[
+				"ded",
+				"_posts/2013-11-29-designing-with-vision.md"
+			],
+			[
+				"conte",
+				"sass/core/_content.sass"
+			],
+			[
+				"con",
+				"config.rb"
+			],
+			[
+				"see",
+				"sass/modules/_example.sass"
+			],
+			[
+				"layou",
+				"sass/core/_layout.sass"
+			],
+			[
+				"postsa",
+				"sass/modules/_post.sass"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,82 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+*,
+::before,
+::after
+  box-sizing: border-box
+
+html
+  @extend .tfb
+  @extend .tcb
+  background: $c-background
+  font-size: $b-fontSize
+  line-height: $b-lineHeight
+
+body
+  font-size: 100%
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+p, ol, ul
+  @extend .mbm
+  @extend .mtf
+
+ol, ul
+  list-style: none
+  padding-left: $b-whitespace
+
+ul
+  li
+    position: relative
+    &::before
+      color: $c-subdue
+      content: '\2022'
+      display: block
+      font-size: percentage(3/2)
+      line-height: percentage(2/3)
+      position: absolute
+      right: 100%
+      width: $b-whitespace
+
+li
+  @extend .mbxs
+  @extend .mtf
+
+// ----- Header ----- //
+
+h1, .h1,
+h2, .h2
+  @extend .mbm
+  @extend .mtf
+  @extend .tac
+  @extend .tch
+  @extend .tfh
+  @extend .tsi
+  @extend .twb
+  line-height: 1.2
+
+h1, .h1
+  font-size: 200%
+
+h2, .h2
+  font-size: 150%
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+  @extend .twb
+  @extend .tch
+  border-bottom: $b-border
+  text-decoration: none
+  &:hover,
+  &:focus
+    border-bottom-color: $c-highlight

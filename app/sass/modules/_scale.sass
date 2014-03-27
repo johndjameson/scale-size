@@ -1,0 +1,51 @@
+// *************************************
+//
+//   Scale
+//   -> This is an example structure
+//
+// *************************************
+
+.scale
+  list-style: none
+  padding: 0
+
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.scale-item
+  @extend .group
+  position: relative
+  &::before
+    content: none
+
+.scale-label
+  font-size: $b-fontSize-aaa
+  line-height: 1
+  position: absolute
+  text-align: right
+  width: $b-whitespace
+
+.scale-preview
+  line-height: 1
+  padding-left: $b-whitespace*2
+

@@ -1,0 +1,85 @@
+// *************************************
+//
+//   Application
+//   -> MVCSS v3.0.3 ~ v4.0.0-alpha
+//   Because an MIT license means I can
+//   pick and choose what I like
+//
+// *************************************
+
+// -------------------------------------
+//   Core
+// -------------------------------------
+
+@import "core/reset"
+@import "core/settings"
+@import "core/helpers"
+@import "core/utilities"
+@import "core/base"
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import "components/bucket"
+@import "components/card"
+@import "components/cell"
+@import "components/grid"
+@import "components/row"
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import "modules/button"
+@import "modules/form"
+@import "modules/input"
+@import "modules/logo"
+@import "modules/scale"
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+body
+  +respond-to(800px)
+    margin-right: 300px
+  +respond-to(1100px)
+    margin-left: 25%
+    margin-right: 25%
+
+.settings
+  +respond-to(800px)
+    box-shadow: -2px 0 rgba($c-base, 0.25)
+    padding: 0 $b-whitespace
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    width: 300px
+  +respond-to(1100px)
+    width: 25%
+
+.footer
+  +respond-to(800px)
+    position: fixed
+    width: 300px
+    padding: 0 $b-whitespace
+    bottom: 0
+    right: 0
+  +respond-to(1100px)
+    width: 25%
+
+.info
+  +respond-to(1100px)
+    box-shadow: 2px 0 rgba($c-base, 0.25)
+    position: fixed
+    width: 25%
+    left: 0
+    top: 0
+    bottom: 0
+    overflow: auto
+
+.scale
+  +respond-to(800px)
+    margin: 0 $b-whitespace
