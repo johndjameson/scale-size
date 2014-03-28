@@ -1,0 +1,54 @@
+// *************************************
+//
+//   Sidebar
+//   -> Hey, that name isn't semantic!
+//
+// *************************************
+
+.sidebar
+  background-color: $c-background
+
+.sidebar--a
+  +respond-to($bp-settings)
+    bottom: 0
+    box-shadow: -2px 0 rgba($c-base, 0.25)
+    padding: 0 $b-whitespace
+    position: fixed
+    right: 0
+    top: 0
+    width: 300px
+
+.sidebar--b
+  +respond-to($bp-settings)
+    margin-right: 300px
+  +respond-to($bp-info)
+    bottom: 0
+    box-shadow: 2px 0 rgba($c-base, 0.25)
+    left: 0
+    overflow: auto
+    position: fixed
+    top: 0
+    width: 300px
+
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+

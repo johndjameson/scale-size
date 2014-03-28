@@ -33,39 +33,6 @@
   +respond-to(800px)
     width: auto
 
-$btn-accordian-triangle-height: $b-whitespace/2
-$btn-accordian-triangle-width: $b-whitespace*0.75
-
-.btn--accordion
-  background-color: $c-background-dark
-  display: block
-  position: relative
-  &::before
-    border-style: solid
-    content: ''
-    display: block
-    height: 0px
-    left: 50%
-    margin-left: -$btn-accordian-triangle-width
-    position: absolute
-    width: 0px
-  &:hover,
-  &:focus
-    outline: 0
-
-.btn--accordion--first
-  margin-bottom: $b-whitespace
-  &::before
-    border-color: $c-background-dark transparent transparent transparent
-    border-width: $btn-accordian-triangle-height $btn-accordian-triangle-width 0 $btn-accordian-triangle-width
-    top: 100%
-
-.btn--accordion--last
-  margin-top: $b-whitespace
-  &::before
-    border-color: transparent transparent $c-background-dark transparent
-    border-width: 0 $btn-accordian-triangle-width $btn-accordian-triangle-height $btn-accordian-triangle-width
-    bottom: 100%
 
 // -------------------------------------
 //   States

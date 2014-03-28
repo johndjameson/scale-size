@@ -12,135 +12,83 @@
 </head>
 <body>
 
-    <section class="info">
+    <section class="info sidebar sidebar--b">
 
         <header>
-            <h1 class="logo">Scale Size</h1>
+            <a href="/"><h1 class="logo">Scale Size</h1></a>
             <p class="tac">Design with math.</p>
         </header>
 
-        <button class="btn btn--accordion btn--accordion--first">Getting Started</button>
+        <div class="accordion" id="info_content">
+            <button class="accordion-btn accordion-btn--a">Getting Started</button>
 
-        <div class="row">
-            <h2 class="mtm">What is this?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, debitis, odit, nulla sapiente <a href="">architecto</a> pariatur officiis repellat tenetur expedita at accusantium nesciunt incidunt ea quia consectetur eveniet tempora! Sit, corrupti.</p>
+            <div class="row">
+                <h2 class="mtm">What is this?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, debitis, odit, nulla sapiente <a href="">architecto</a> pariatur officiis repellat tenetur expedita at accusantium nesciunt incidunt ea quia consectetur eveniet tempora! Sit, corrupti.</p>
 
-            <h2>How to use</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis corrupti assumenda.</li>
-                <li>Beatae, ipsum, et voluptas incidunt repellendus maiores odit perferendis nam officiis numquam.</li>
-                <li>Sed, laboriosam quaerat numquam totam omnis asperiores similique maiores minus tenetur beatae.</li>
-            </ul>
+                <h2>How to use</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae reiciendis corrupti assumenda.</li>
+                    <li>Beatae, ipsum, et voluptas incidunt repellendus maiores odit perferendis nam officiis numquam.</li>
+                    <li>Sed, laboriosam quaerat numquam totam omnis asperiores similique maiores minus tenetur beatae.</li>
+                </ul>
 
-            <h2>Feedback</h2>
-            <p>Feel encouraged to send feedback via <a href="">Twitter</a> or this website’s <a href="">GitHub</a> repository.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, culpa nostrum soluta laborum sequi quos deserunt eum. Earum, reprehenderit omnis enim itaque nemo asperiores corrupti molestias voluptatem maiores sit quo.</p>
-            <p>Maxime corporis ipsa distinctio quod atque veritatis soluta fugit? Ducimus, culpa dolor autem doloribus asperiores necessitatibus quam quas nulla sunt officia eius iure suscipit deserunt optio delectus facilis nesciunt eos.</p>
-            <p>Enim eius cumque laborum nulla id officia laboriosam facilis hic. Rem, excepturi aliquid nobis harum commodi minima nihil similique est ipsa veniam! Iste expedita nobis tempora aliquam vero consequatur error.</p>
-            <p>Ipsa, vel, iure commodi nulla nobis quis odit saepe soluta quisquam illo officiis molestias aliquid reiciendis. Placeat, neque eaque quaerat vitae mollitia nulla ipsam earum hic sunt omnis? Laboriosam, illum!</p>
-            <p>Quas, ducimus, dicta deserunt illo magnam dolorem ea ipsam. Culpa, quam porro itaque maiores odit accusamus autem. Dolore, sunt, inventore, modi et odit in molestias blanditiis ducimus perferendis ratione cumque.</p>
+                <h2>Feedback</h2>
+                <p>Feel encouraged to send feedback via <a href="">Twitter</a> or this website’s <a href="">GitHub</a> repository.</p>
+            </div>
+            <button class="accordion-btn accordion-btn--b">Close</button>
         </div>
-
-        <button class="btn btn--accordion btn--accordion--last mbm">Close</button>
     </section>
 
-    <section class="settings">
+    <section class="settings sidebar sidebar--a">
         <form class="form">
             <h2 class="form-legend mtm">Settings</h2>
 
             <div class="input-group">
                 <label>Text Size</label>
                 <input class="input-field input-field--number" type="number" min="10" max="64" value="18" step="1">
-                <input class="input-range" type="range" min="10" max="64" value="18" step="1">
+                <input class="input-range" id="text_size" type="range" min="10" max="64" value="18" step="1">
             </div>
 
             <div class="input-group">
                 <label>Alternate Size</label>
                 <input class="input-field input-field--number" type="number" min="10" max="360" value="198" step="1">
-                <input class="input-range" type="range" min="10" max="360" value="198" step="1">
+                <input class="input-range" id="alt_size" type="range" min="10" max="360" value="198" step="1">
             </div>
 
             <div class="input-group">
                 <label>Scale Ratio</label>
                 <input class="input-field input-field--number" type="number" min="1.10" max="3.00" value="1.30" step="0.05">
-                <input class="input-range" type="range" min="1.10" max="3.00" value="1.30" step="0.05">
+                <input class="input-range" id="ratio" type="range" min="1.10" max="3.00" value="1.33" step="0.05">
             </div>
 
             <div class="input-group">
                 <label>Preview Text</label>
-                <textarea class="input-textarea" name="" rows="2" maxlength="100">Lorem ipsum dolor sit amet</textarea>
+                <textarea class="input-textarea" id="" rows="2" maxlength="100">Lorem ipsum dolor sit amet</textarea>
             </div>
 
             <div class="input-group">
                 <label><abbr>URL</abbr></label>
-                <input class="input-field" type="text" value="http://scalesize.com/?text=18&amp;alt=198&amp;scale=1.33">
+                <input class="input-field" id="current_link" type="text" readonly value="http://scalesize.com/?text=18&amp;alt=198&amp;scale=1.33">
             </div>
 
-            <a href="http://twitter.com?intent=tweet" class="btn btn--primary mbl">Tweet</a>
+            <a href="http://twitter.com/share?text=Check+out+my+sweet+scale+on+@scalesize" class="btn btn--primary"><i class="icon icon--twitter"></i> Tweet</a>
         </form>
     </section>
 
-    <ul class="scale">
+    <ul class="scale" id="scale">
         <li class="scale-item">
             <p class="scale-label">10px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">12px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">14px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">16px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">18px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">22px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">24px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">29px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">32px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">39px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">43px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">53px</p>
-            <p class="scale-preview">Lorem ipsum dolor sit amet</p>
-        </li>
-        <li class="scale-item">
-            <p class="scale-label">57px</p>
             <p class="scale-preview">Lorem ipsum dolor sit amet</p>
         </li>
     </ul>
 
     <footer class="footer">
-        <p class="tac mtm">Designed and developed by <a class="dib" href="http://twitter.com/johndjameson">John D. Jameson</a></p>
+        <p class="tac">Designed and developed by <a class="dib" href="http://twitter.com/johndjameson">John D. Jameson</a></p>
     </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/underscore.js"></script>
     <script src="js/application.js"></script>
 </body>
 </html>

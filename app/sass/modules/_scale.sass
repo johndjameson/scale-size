@@ -6,8 +6,19 @@
 // *************************************
 
 .scale
+  background-color: $c-background-light
   list-style: none
+  margin-bottom: 0
+  overflow: hidden
   padding: 0
+  +respond-to($bp-settings)
+    height: 100%
+    margin-right: 300px
+    padding: $b-whitespace
+  +respond-to($bp-info)
+    margin-left: 300px
+    overflow-x: hidden
+    overflow-y: auto
 
 
 // -------------------------------------
@@ -34,6 +45,7 @@
 
 .scale-item
   @extend .group
+  line-height: 1
   position: relative
   &::before
     content: none
@@ -48,4 +60,5 @@
 .scale-preview
   line-height: 1
   padding-left: $b-whitespace*2
+  white-space: nowrap
 

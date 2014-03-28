@@ -44,6 +44,12 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/sass/**/*.{scss,sass}'
         ],
         tasks: ['sass', 'autoprefixer']
+      },
+      javascript: {
+        files: [
+          '<%= yeoman.app %>/**/*.js'
+        ],
+        tasks: ['clean', 'copy', 'sass', 'autoprefixer']
       }
     },
 
