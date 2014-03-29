@@ -3,6 +3,8 @@ var ScaleSize = (function(){
         textSize: 0,
         altSize: 0,
         ratio: 0,
+        previewText: 'lorem ipsum dolor sit amet',
+        query: '',
         sizes: []
   };
 
@@ -10,6 +12,7 @@ var ScaleSize = (function(){
     init: function() {
       scalesize.bindUIActions();
       scalesize.parseQuery();
+      scalesize.setQuery();
       scalesize.displayQuery();
       scalesize.calculateSizes();
       scalesize.displaySizes();
@@ -38,6 +41,10 @@ var ScaleSize = (function(){
       });
 
       $('#ratio').on('change', function() {
+        scalesize.updateSizes();
+      });
+
+      $('#preview_text').on('input', function() {
         scalesize.updateSizes();
       });
 
@@ -91,6 +98,7 @@ var ScaleSize = (function(){
     updateSizes: function() {
       scalesize.getSizes();
       scalesize.calculateSizes();
+      scalesize.setQuery();
       scalesize.displayQuery();
       scalesize.displaySizes();
     },
@@ -99,6 +107,7 @@ var ScaleSize = (function(){
       cache.textSize = $('#text_size').val();
       cache.altSize = $('#alt_size').val();
       cache.ratio = $('#ratio').val();
+      cache.previewText = $('#preview_text').val().replace(/\s/g, '&nbsp;') || '&nbsp;';
     },
 
     calculateSizes: function() {
@@ -133,26 +142,41 @@ var ScaleSize = (function(){
       cache.sizes = _.uniq(_.sortBy(sizes, function (num) { return num; }));
     },
 
+    setQuery: function() {
+      cache.query =
+        'text=' + cache.textSize + '&' +
+        'alt=' + cache.altSize + '&' +
+        'ratio=' + cache.ratio;
+    },
+
     displayQuery: function() {
       $('#current_link').val(
         'http://' +
         window.location.host + '?' +
-        'text=' + cache.textSize + '&' +
-        'alt=' + cache.altSize + '&' +
-        'ratio=' + cache.ratio
+        cache.query
+      );
+
+      $('#tweet').attr('href',
+        'http://twitter.com/share?text=' +
+        encodeURIComponent(
+          'Check out my sweet scale on @scalesize http://scalesize.com/?' +
+          cache.query
+        )
       );
     },
 
     displaySizes: function() {
       var
+        text = cache.previewText,
         sizes = cache.sizes,
         str = '';
+
 
       for (var i = 0, len = sizes.length; i < len; i++) {
         str +=
           '<li class="scale-item">' +
             '<p class="scale-label">' + sizes[i] + 'px</p>' +
-            '<p class="scale-preview" style="font-size:' + sizes[i] + 'px;">lorem ipsum dolor sit amet</p>' +
+            '<p class="scale-preview" style="font-size:' + sizes[i] + 'px;">' + text + '</p>' +
           '</li>';
       }
 

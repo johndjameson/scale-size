@@ -23,6 +23,8 @@ $accordian-triangle-width: $b-whitespace*0.75
 
 .accordion.is-closed
   max-height: $b-whitespace*2
+  +respond-to($bp-info)
+    max-height: none
 
   .accordion-btn--a
     margin-bottom: 0
