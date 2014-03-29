@@ -13,6 +13,7 @@
   padding: $b-whitespace/2 $b-whitespace*0.75
   text-align: center
   text-decoration: none
+  transition: $b-transition
   width: 100%
 
 // -------------------------------------
@@ -30,7 +31,10 @@
   &:focus
     background-color: $c-primary-light
     border-color: $c-primary
-  +respond-to(800px)
+  &:active
+    background-color: $c-primary-dark
+    border-color: $c-primary-darker
+  +respond-to($bp-settings)
     width: auto
 
 
