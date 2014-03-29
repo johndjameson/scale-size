@@ -11,17 +11,16 @@
 .sidebar--a
   +respond-to($bp-settings)
     bottom: 0
-
     padding: 0 $b-whitespace
     position: fixed
     right: 0
     top: 0
-    width: 300px
+    width: $b-sidebar-width
     box-shadow: -2px 0 rgba($c-base, 0.25)
 
 .sidebar--b
   +respond-to($bp-settings)
-    margin-right: 300px
+    margin-right: $b-sidebar-width
   +respond-to($bp-info)
     bottom: 0
     box-shadow: 2px 0 rgba($c-base, 0.25)
@@ -29,7 +28,7 @@
     overflow: auto
     position: fixed
     top: 0
-    width: 300px
+    width: $b-sidebar-width
 
 
 // -------------------------------------

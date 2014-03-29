@@ -13,6 +13,7 @@ var ScaleSize = (function(){
       scalesize.bindUIActions();
       scalesize.parseQuery();
       scalesize.setQuery();
+      scalesize.setFields();
       scalesize.displayQuery();
       scalesize.calculateSizes();
       scalesize.displaySizes();
@@ -32,19 +33,21 @@ var ScaleSize = (function(){
       });
 
       // Settings
-      $('#text_size').on('change', function() {
-        scalesize.updateSizes();
-      });
-
-      $('#alt_size').on('change', function() {
-        scalesize.updateSizes();
-      });
-
-      $('#ratio').on('change', function() {
+      // Has to be 'change' to support keyboard input
+      $('#text_size, #alt_size, #ratio').on('change', function() {
         scalesize.updateSizes();
       });
 
       $('#preview_text').on('input', function() {
+        scalesize.updateSizes();
+      });
+
+      $('#text_size_field, #alt_size_field, #ratio_field').on('input', function() {
+
+        $('#text_size').val($('#text_size_field').val());
+        $('#alt_size').val($('#alt_size_field').val());
+        $('#ratio').val($('#ratio_field').val());
+
         scalesize.updateSizes();
       });
 
@@ -97,6 +100,7 @@ var ScaleSize = (function(){
 
     updateSizes: function() {
       scalesize.getSizes();
+      scalesize.setFields();
       scalesize.calculateSizes();
       scalesize.setQuery();
       scalesize.displayQuery();
@@ -108,6 +112,12 @@ var ScaleSize = (function(){
       cache.altSize = $('#alt_size').val();
       cache.ratio = $('#ratio').val();
       cache.previewText = $('#preview_text').val().replace(/\s/g, '&nbsp;') || '&nbsp;';
+    },
+
+    setFields: function() {
+      $('#text_size_field').val($('#text_size').val());
+      $('#alt_size_field').val($('#alt_size').val());
+      $('#ratio_field').val($('#ratio').val());
     },
 
     calculateSizes: function() {

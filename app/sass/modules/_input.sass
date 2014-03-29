@@ -33,11 +33,12 @@
   @extend .group
   margin-bottom: $b-whitespace*2
   position: relative
-  label
-    display: block
-    font-size: $b-fontSize-aa
-    font-weight: 700
-    margin-bottom: $b-whitespace
+
+.input-label
+  display: block
+  font-size: $b-fontSize-aa
+  font-weight: 700
+  margin-bottom: $b-whitespace*0.75
 
 .input-field
   background-color: $c-background-light
@@ -58,9 +59,6 @@
   text-align: right
   top: 0
   width: auto
-
-.input-range
-  width: 100%
 
 .input-textarea
   @extend .input-field

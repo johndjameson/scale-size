@@ -38,6 +38,7 @@
 @import "modules/icon"
 @import "modules/input"
 @import "modules/logo"
+@import "modules/range"
 @import "modules/scale"
 @import "modules/sidebar"
 
@@ -46,9 +47,9 @@
 // -------------------------------------
 
 .footer
-  +respond-to(800px)
+  +respond-to($bp-settings)
     position: fixed
-    width: 300px
+    width: $b-sidebar-width
     padding: 0 $b-whitespace
     bottom: 0
     right: 0
