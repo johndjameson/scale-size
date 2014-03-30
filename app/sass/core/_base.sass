@@ -63,10 +63,12 @@ h2, .h2
   line-height: 1.2
 
 h1, .h1
-  font-size: 200%
+  font-size: $b-fontSize-b
 
 h2, .h2
-  font-size: 150%
+  font-size: $b-fontSize-c
+  +respond-to($bp-fontSize)
+    font-size: $b-fontSize-d
 
 // -------------------------------------
 //   Inline Content

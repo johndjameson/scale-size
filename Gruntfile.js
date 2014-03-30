@@ -1,14 +1,5 @@
 'use strict';
 
-/* TO-DO
-   * Separate development and distribution files/directories
-   * Add 'lint' command
-     - CSSLint
-     - CSSCSS
-     - JSHint
-     - Minification statistics
-*/
-
 module.exports = function (grunt) {
   require('time-grunt')(grunt);
   require('load-grunt-tasks')(grunt);
@@ -37,7 +28,7 @@ module.exports = function (grunt) {
         files: [
           '<%= yeoman.app %>/**/*.html'
         ],
-        tasks: ['clean', 'copy', 'sass', 'autoprefixer']
+        tasks: ['build']
       },
       sass: {
         files: [
@@ -49,18 +40,7 @@ module.exports = function (grunt) {
         files: [
           '<%= yeoman.app %>/**/*.js'
         ],
-        tasks: ['clean', 'copy', 'sass', 'autoprefixer']
-      }
-    },
-
-    clean: {
-      dist: {
-        files: [{
-          dot: true,
-          src: [
-            '<%= yeoman.dist %>/*'
-          ]
-        }]
+        tasks: ['concat']
       }
     },
 
@@ -70,11 +50,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: '<%= yeoman.app %>',
-          src: [
-            '**/*.html',
-            'js/**/*.js',
-            '!**/_*{,/**}' // not underscored files/directories
-          ],
+          src: '**/*.html',
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -112,6 +88,17 @@ module.exports = function (grunt) {
         dest: '<%= yeoman.dist %>/css',
         ext: '.min.css'
       }
+    },
+
+    concat: {
+      dist: {
+        src: [
+          '<%= yeoman.app %>/js/accordion.js',
+          '<%= yeoman.app %>/js/scalesize.js',
+          '<%= yeoman.app %>/js/application.js'
+        ],
+        dest: '<%= yeoman.dist %>/js/application.js'
+      }
     }
 
   });
@@ -120,21 +107,17 @@ module.exports = function (grunt) {
   // Define Tasks
 
   grunt.registerTask('dev', [
-    'clean',
-    'copy',
-    'sass',
-    'autoprefixer',
-    'cssmin',
+    'build',
     'connect',
     'watch'
   ]);
 
   grunt.registerTask('build', [
-    'clean',
     'copy',
     'sass',
     'autoprefixer',
-    'cssmin'
+    'cssmin',
+    'concat'
   ]);
 
   grunt.registerTask('default', [

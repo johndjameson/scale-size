@@ -10,6 +10,7 @@ $accordian-triangle-width: $b-whitespace*0.75
 
 .accordion
   overflow: hidden
+  transition: $b-transition
 
 // -------------------------------------
 //   Modifiers
@@ -21,10 +22,13 @@ $accordian-triangle-width: $b-whitespace*0.75
 //   States
 // -------------------------------------
 
-.accordion.is-closed .accordion-content
-  max-height: 0
-  +respond-to($bp-info)
-    max-height: none
+.accordion.is-closed
+  .accordion-content
+    max-height: 0
+    +respond-to($bp-info)
+      max-height: none
+  .accordion-btn--b
+    display: none
 
 // -------------------------------------
 //   Context
@@ -61,13 +65,13 @@ $accordian-triangle-width: $b-whitespace*0.75
   &:focus
     outline: 0
 
-.accordion-btn--a
+.accordion-btn--toggle
   &::before
     border-color: $c-background-dark transparent transparent transparent
     border-width: $accordian-triangle-height $accordian-triangle-width 0 $accordian-triangle-width
     top: 100%
 
-.accordion-btn--b
+.accordion-btn--close
   &::before
     border-color: transparent transparent $c-background-dark transparent
     border-width: 0 $accordian-triangle-width $accordian-triangle-height $accordian-triangle-width

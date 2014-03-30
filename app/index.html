@@ -20,7 +20,7 @@
         </header>
 
         <div class="accordion" id="info_content">
-            <button class="accordion-btn accordion-btn--a">Getting Started</button>
+            <button class="accordion-btn accordion-btn--toggle">Getting Started</button>
 
             <div class="accordion-content">
                 <h2 class="mtm">What is this?</h2>
@@ -37,7 +37,7 @@
                 <p>Feel encouraged to send feedback via <a href="">Twitter</a> or this website’s <a href="">GitHub</a> repository.</p>
             </div>
 
-            <button class="accordion-btn accordion-btn--b">Close</button>
+            <button class="accordion-btn accordion-btn--close">Close</button>
         </div>
     </section>
 
@@ -47,24 +47,24 @@
 
             <div class="range">
                 <label class="range-label">Text Size</label>
-                <input class="range-field" id="text_size_field" type="number" min="10" max="64" value="18" step="1">
-                <input class="range-slider" id="text_size" type="range" min="10" max="64" value="18" step="1">
-                <span class="range-limit range-limit--min">10</span>
+                <input class="range-field" id="text_size_field" type="number" min="1" max="64" value="16" step="1">
+                <input class="range-slider" id="text_size" type="range" min="8" max="64" value="16" step="1" tabindex="-1">
+                <span class="range-limit range-limit--min">8</span>
                 <span class="range-limit range-limit--max">64</span>
             </div>
 
             <div class="range">
                 <label class="range-label">Alternate Size</label>
-                <input class="range-field" id="alt_size_field" type="number" min="10" max="360" value="198" step="1">
-                <input class="range-slider" id="alt_size" type="range" min="10" max="360" value="198" step="1">
-                <span class="range-limit range-limit--min">10</span>
-                <span class="range-limit range-limit--max">300</span>
+                <input class="range-field" id="alt_size_field" type="number" min="1" max="360" value="200" step="1">
+                <input class="range-slider" id="alt_size" type="range" min="8" max="360" value="200" step="1" tabindex="-1">
+                <span class="range-limit range-limit--min">8</span>
+                <span class="range-limit range-limit--max">360</span>
             </div>
 
             <div class="range">
                 <label class="range-label">Scale Ratio</label>
                 <input class="range-field" type="number" id="ratio_field" min="1.10" max="3.00" value="1.30" step="0.05">
-                <input class="range-slider" id="ratio" type="range" min="1.10" max="3.00" value="1.33" step="0.05">
+                <input class="range-slider" id="ratio" type="range" min="1.10" max="3.00" value="1.33" step="0.05" tabindex="-1">
                 <span class="range-limit range-limit--min">1.10</span>
                 <span class="range-limit range-limit--max">3.00</span>
             </div>
