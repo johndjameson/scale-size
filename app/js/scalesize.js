@@ -20,20 +20,15 @@ var ScaleSize = {
     // Settings
     // Has to be 'change' to support keyboard input
     $('#text_size, #alt_size, #ratio').on('change', function() {
-      ScaleSize.updateSizes();
+      ScaleSize.updateSizes(false, 'range');
     });
 
     $('#preview_text').on('input', function() {
-      ScaleSize.updateSizes();
+      ScaleSize.updateSizes(false, 'field');
     });
 
     $('#text_size_field, #alt_size_field, #ratio_field').on('input', function() {
-
-      $('#text_size').val($('#text_size_field').val());
-      $('#alt_size').val($('#alt_size_field').val());
-      $('#ratio').val($('#ratio_field').val());
-
-      ScaleSize.updateSizes();
+      ScaleSize.updateSizes(false, 'field');
     });
 
     // http://stackoverflow.com/questions/3150275/jquery-input-select-all-on-focus
@@ -52,10 +47,10 @@ var ScaleSize = {
       items = window.location.search.slice(1).split('&');
 
     query.text = 16;
-    query.alt = 200;
+    query.alt = 320;
     query.ratio = 1.60;
 
-    // Independent of order, sets object properties from query string
+    // Independent of order, overwrites object properties from query string
     for (var i = 0, len = items.length; i < len; i++) {
       var // hoisted outside scope in loops
         a = items[i].split('='),
@@ -65,10 +60,10 @@ var ScaleSize = {
     }
 
     // Sanitize user input (remove useless/dangerous values)
-    if (query.text < 10) query.text = 10;
+    if (query.text < 8) query.text = 8;
     if (query.text > 64) query.text = 64;
 
-    if (query.alt < 10) query.alt = 10;
+    if (query.alt < 8) query.alt = 8;
     if (query.alt > 1000) query.alt = 1000;
 
     if (query.ratio < 1.1) query.ratio = 1.1;
@@ -79,30 +74,43 @@ var ScaleSize = {
     ScaleSize.s.ratio = query.ratio;
   },
 
-  updateSizes: function(firstRun) {
-    ScaleSize.getSizes();
-    firstRun && ScaleSize.parseQuery();
-    ScaleSize.setFields();
+  updateSizes: function(isInit, context) {
+    console.log('updateSizes');
+    ScaleSize.getInput(context);
+
+    if (isInit) ScaleSize.parseQuery();
+    context === 'range' ? ScaleSize.setFields() : ScaleSize.setRanges();
     ScaleSize.calculateSizes();
     ScaleSize.setQuery();
     ScaleSize.displayQuery();
     ScaleSize.displaySizes();
   },
 
-  getSizes: function() {
-    ScaleSize.s.textSize = $('#text_size').val();
-    ScaleSize.s.altSize = $('#alt_size').val();
-    ScaleSize.s.ratio = $('#ratio').val();
+  getInput: function(context) {
+
+    if (context === 'range') {
+        // fallbacks in case of 0 or empty string
+        ScaleSize.s.textSize = $('#text_size').val() || 1;
+        ScaleSize.s.altSize = $('#alt_size').val() || 1;
+        ScaleSize.s.ratio = $('#ratio').val() || 1.1;
+    } else {
+        ScaleSize.s.textSize = $('#text_size_field').val() || 1;
+        ScaleSize.s.altSize = $('#alt_size_field').val() || 1;
+        ScaleSize.s.ratio = $('#ratio_field').val() || 1.1;
+    }
+
     ScaleSize.s.previewText = $('#preview_text').val().replace(/\s/g, '&nbsp;') || '&nbsp;';
   },
 
   setRanges: function() {
+    console.log('setRanges');
     $('#text_size').val(ScaleSize.s.textSize);
     $('#alt_size').val(ScaleSize.s.altSize);
     $('#ratio').val(ScaleSize.s.ratio);
   },
 
   setFields: function() {
+    console.log('setFields');
     $('#text_size_field').val($('#text_size').val());
     $('#alt_size_field').val($('#alt_size').val());
     $('#ratio_field').val($('#ratio').val());
@@ -137,6 +145,8 @@ var ScaleSize = {
     calc(ScaleSize.s.altSize, true);
     calc(ScaleSize.s.altSize, false);
 
+    // Sort sizes in ascending order, remove duplicates
+    // (Underscore.js)
     ScaleSize.s.sizes = _.uniq(_.sortBy(sizes, function (num) { return num; }));
   },
 

@@ -1,4 +1,5 @@
 var Accordion = {
+
   init: function() {
     Accordion.bindUIActions();
     Accordion.closeAllAccordions();
