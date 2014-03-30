@@ -3,9 +3,10 @@
 var ScaleSize = {
 
   s: {
-        textSize: 0,
-        altSize: 0,
-        ratio: 0,
+        textSize: 16,
+        altSize: 320,
+        ratio: 1.6,
+        max: 360,
         previewText: 'lorem ipsum dolor sit amet',
         query: '',
         sizes: []
@@ -13,22 +14,22 @@ var ScaleSize = {
 
   init: function() {
     ScaleSize.bindUIActions();
-    ScaleSize.updateSizes(true);
+    ScaleSize.updateSizes('init');
   },
 
   bindUIActions: function() {
     // Settings
     // Has to be 'change' to support keyboard input
     $('#text_size, #alt_size, #ratio').on('change', function() {
-      ScaleSize.updateSizes(false, 'range');
+      ScaleSize.updateSizes('range');
     });
 
     $('#preview_text').on('input', function() {
-      ScaleSize.updateSizes(false, 'field');
+      ScaleSize.updateSizes('field');
     });
 
     $('#text_size_field, #alt_size_field, #ratio_field').on('input', function() {
-      ScaleSize.updateSizes(false, 'field');
+      ScaleSize.updateSizes('field');
     });
 
     // http://stackoverflow.com/questions/3150275/jquery-input-select-all-on-focus
@@ -46,9 +47,9 @@ var ScaleSize = {
       query = {},
       items = window.location.search.slice(1).split('&');
 
-    query.text = 16;
-    query.alt = 320;
-    query.ratio = 1.60;
+    query.text = ScaleSize.s.textSize;
+    query.alt = ScaleSize.s.altSize;
+    query.ratio = ScaleSize.s.ratio;
 
     // Independent of order, overwrites object properties from query string
     for (var i = 0, len = items.length; i < len; i++) {
@@ -56,15 +57,16 @@ var ScaleSize = {
         a = items[i].split('='),
         val = parseFloat(a[1], 10);
 
+      // if the query is well-formed, the parameter overwrites the default
       if (!isNaN(val)) query[a[0]] = val;
     }
 
     // Sanitize user input (remove useless/dangerous values)
-    if (query.text < 8) query.text = 8;
-    if (query.text > 64) query.text = 64;
+    if (query.text < 1) query.text = 1;
+    if (query.text > 99) query.text = 99;
 
-    if (query.alt < 8) query.alt = 8;
-    if (query.alt > 1000) query.alt = 1000;
+    if (query.alt < 1) query.alt = 1;
+    if (query.alt > 999) query.alt = 999;
 
     if (query.ratio < 1.1) query.ratio = 1.1;
     if (query.ratio > 3) query.ratio = 3;
@@ -74,15 +76,22 @@ var ScaleSize = {
     ScaleSize.s.ratio = query.ratio;
   },
 
-  updateSizes: function(isInit, context) {
-    console.log('updateSizes');
+  updateSizes: function(context) {
     ScaleSize.getInput(context);
 
-    if (isInit) ScaleSize.parseQuery();
-    context === 'range' ? ScaleSize.setFields() : ScaleSize.setRanges();
+    if (context === 'init') {
+      ScaleSize.parseQuery();
+      ScaleSize.setFields();
+      ScaleSize.setRanges();
+    } else if (context === 'field') {
+      ScaleSize.setRanges();
+    } else {
+      ScaleSize.setFields();
+    }
+
     ScaleSize.calculateSizes();
-    ScaleSize.setQuery();
-    ScaleSize.displayQuery();
+    ScaleSize.setLink();
+    ScaleSize.displayLink();
     ScaleSize.displaySizes();
   },
 
@@ -102,18 +111,16 @@ var ScaleSize = {
     ScaleSize.s.previewText = $('#preview_text').val().replace(/\s/g, '&nbsp;') || '&nbsp;';
   },
 
+  setFields: function() {
+    $('#text_size_field').val(ScaleSize.s.textSize);
+    $('#alt_size_field').val(ScaleSize.s.altSize);
+    $('#ratio_field').val(ScaleSize.s.ratio);
+  },
+
   setRanges: function() {
-    console.log('setRanges');
     $('#text_size').val(ScaleSize.s.textSize);
     $('#alt_size').val(ScaleSize.s.altSize);
     $('#ratio').val(ScaleSize.s.ratio);
-  },
-
-  setFields: function() {
-    console.log('setFields');
-    $('#text_size_field').val($('#text_size').val());
-    $('#alt_size_field').val($('#alt_size').val());
-    $('#ratio_field').val($('#ratio').val());
   },
 
   calculateSizes: function() {
@@ -150,14 +157,14 @@ var ScaleSize = {
     ScaleSize.s.sizes = _.uniq(_.sortBy(sizes, function (num) { return num; }));
   },
 
-  setQuery: function() {
+  setLink: function() {
     ScaleSize.s.query =
       'text=' + ScaleSize.s.textSize + '&' +
       'alt=' + ScaleSize.s.altSize + '&' +
       'ratio=' + ScaleSize.s.ratio;
   },
 
-  displayQuery: function() {
+  displayLink: function() {
     $('#current_link').val(
       'http://' +
       window.location.host + '?' +
@@ -184,7 +191,13 @@ var ScaleSize = {
       str +=
         '<li class="scale-item">' +
           '<p class="scale-label">' + sizes[i] + 'px</p>' +
-          '<p class="scale-preview" style="font-size:' + sizes[i] + 'px;">' + text + '</p>' +
+          '<p class="scale-preview" style="' +
+            'font-size:' + sizes[i] + 'px; ' +
+            // slightly fade out large text so it's not overwhelming
+            'opacity:' + (1 - (sizes[i] / ScaleSize.s.max / 8)) + ';' +
+            '">' +
+            text +
+          '</p>' +
         '</li>';
     }
 
