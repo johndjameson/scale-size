@@ -19,11 +19,11 @@
             <p class="tac">Design with math.</p>
         </header>
 
-        <div class="accordion" id="info_content">
+        <main class="accordion" id="info_content" role="main">
             <button class="accordion-btn accordion-btn--toggle">Getting Started</button>
 
             <div class="accordion-content">
-                <h2 class="mtm">What is this?</h2>
+                <h2>What is this?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, debitis, odit, nulla sapiente <a href="">architecto</a> pariatur officiis repellat tenetur expedita at accusantium nesciunt incidunt ea quia consectetur eveniet tempora! Sit, corrupti.</p>
 
                 <h2>How to use</h2>
@@ -35,15 +35,15 @@
 
                 <h2>Feedback</h2>
                 <p>Feel encouraged to send feedback via <a href="">Twitter</a> or this website’s <a href="">GitHub</a> repository.</p>
-            </div>
+            </main>
 
             <button class="accordion-btn accordion-btn--close">Close</button>
-        </div>
+        </aside>
     </section>
 
     <section class="settings sidebar sidebar--a">
-        <form class="form">
-            <h2 class="form-legend mtm">Settings</h2>
+        <form class="form" role="form">
+            <h2 class="form-legend">Settings</h2>
 
             <div class="range">
                 <label class="range-label">Text Size</label>
@@ -63,10 +63,10 @@
 
             <div class="range">
                 <label class="range-label">Scale Ratio</label>
-                <input class="range-field" type="number" id="ratio_field" min="1.10" max="3.00" value="1.60" step="0.05">
-                <input class="range-slider" id="ratio" type="range" min="1.10" max="3.00" value="1.6" step="0.05" tabindex="-1">
-                <span class="range-limit range-limit--min">1.10</span>
-                <span class="range-limit range-limit--max">3.00</span>
+                <input class="range-field" type="number" id="ratio_field" min="1.1" max="3" value="1.60" step="0.025">
+                <input class="range-slider" id="ratio" type="range" min="1.10" max="3.00" value="1.6" step="0.025" tabindex="-1">
+                <span class="range-limit range-limit--min">1.1</span>
+                <span class="range-limit range-limit--max">3</span>
             </div>
 
             <div class="input-group">
@@ -85,10 +85,12 @@
 
     <section class="viewer">
         <ul class="scale" id="scale">
+            <!-- Added by JavaScript, here for reference
             <li class="scale-item">
                 <p class="scale-label">10px</p>
                 <p class="scale-preview">Lorem ipsum dolor sit amet</p>
             </li>
+            -->
         </ul>
 
         <noscript>
@@ -96,7 +98,7 @@
         </noscript>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p class="tac">Designed and developed by <a class="dib" href="http://twitter.com/johndjameson">John D. Jameson</a></p>
     </footer>
 

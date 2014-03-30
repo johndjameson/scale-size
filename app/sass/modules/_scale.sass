@@ -33,6 +33,7 @@
 .scale-item
   @extend .group
   line-height: 1
+  margin-bottom: $b-whitespace
   position: relative
   &::before
     content: none
@@ -42,10 +43,13 @@
   line-height: 1
   position: absolute
   text-align: right
+  top: 50%
+  transform: translateY(-50%)
   width: $b-whitespace
 
 .scale-preview
   line-height: 1
+  margin: 0
   padding-left: $b-whitespace*2
   white-space: nowrap
 
