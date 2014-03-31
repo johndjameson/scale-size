@@ -86,18 +86,28 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.dist %>/css',
         src: '*.css',
         dest: '<%= yeoman.dist %>/css',
-        ext: '.min.css'
+        ext: '.css'
       }
     },
 
     concat: {
       dist: {
         src: [
+          '<%= yeoman.app %>/bower_components/jquery/dist/jquery.js',
+          '<%= yeoman.app %>/bower_components/underscore/underscore.js',
           '<%= yeoman.app %>/js/accordion.js',
           '<%= yeoman.app %>/js/scalesize.js',
           '<%= yeoman.app %>/js/application.js'
         ],
         dest: '<%= yeoman.dist %>/js/application.js'
+      }
+    },
+
+    uglify: {
+      dist: {
+        files: {
+          '<%= yeoman.dist %>/js/application.js': ['<%= yeoman.dist %>/js/application.js']
+        }
       }
     }
 
@@ -107,8 +117,12 @@ module.exports = function (grunt) {
   // Define Tasks
 
   grunt.registerTask('dev', [
-    'build',
+    'copy',
+    'sass',
+    'autoprefixer',
+    'concat',
     'connect',
+    'uglify', // To test first-run minification compatibility
     'watch'
   ]);
 
@@ -117,7 +131,8 @@ module.exports = function (grunt) {
     'sass',
     'autoprefixer',
     'cssmin',
-    'concat'
+    'concat',
+    'uglify'
   ]);
 
   grunt.registerTask('default', [
