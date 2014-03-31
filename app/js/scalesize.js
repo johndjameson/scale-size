@@ -18,7 +18,9 @@ var ScaleSize = {
   },
 
   bindUIActions: function() {
+
     // Settings
+
     // Has to be 'change' to support keyboard input
     $('#text_size, #alt_size, #ratio').on('change', function() {
       ScaleSize.updateSizes('range');
@@ -97,15 +99,22 @@ var ScaleSize = {
 
   getInput: function(context) {
 
+    function fallbackTo(el, prop, min) {
+      // fallbacks in case of 0 or empty string
+      // weird syntax because Firefox doesn't play nice with empty strings
+      el.val() < min ?
+        ScaleSize.s[prop] = min :
+        ScaleSize.s[prop] = el.val();
+    }
+
     if (context === 'range') {
-        // fallbacks in case of 0 or empty string
-        ScaleSize.s.textSize = $('#text_size').val() || 1;
-        ScaleSize.s.altSize = $('#alt_size').val() || 1;
-        ScaleSize.s.ratio = $('#ratio').val() || 1.1;
+      fallbackTo($('#text_size'), 'textSize', 1);
+      fallbackTo($('#alt_size'), 'altSize', 1);
+      fallbackTo($('#ratio'), 'ratio', 1.1);
     } else {
-        ScaleSize.s.textSize = $('#text_size_field').val() || 1;
-        ScaleSize.s.altSize = $('#alt_size_field').val() || 1;
-        ScaleSize.s.ratio = $('#ratio_field').val() || 1.1;
+      fallbackTo($('#text_size_field'), 'textSize', 1);
+      fallbackTo($('#alt_size_field'), 'altSize', 1);
+      fallbackTo($('#ratio_field'), 'ratio', 1.1);
     }
 
     ScaleSize.s.previewText = $('#preview_text').val().replace(/\s/g, '&nbsp;') || '&nbsp;';
