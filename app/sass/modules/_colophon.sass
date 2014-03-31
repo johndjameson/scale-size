@@ -1,12 +1,25 @@
 // *************************************
 //
-//   Range
-//   -> This is an example structure
+//   Colophon
+//   -> Contains information about the
+//      website
 //
 // *************************************
 
-.range
-  @extend .input-group
+.colophon
+  background-color: $c-background
+  overflow: hidden
+  padding: $b-whitespace $b-whitespace 0
+  margin: 0
+  @media screen and (min-width: #{$bp-settings}) and (min-height: $bp-colophon)
+    background-color: transparent
+    position: fixed
+    width: $b-sidebar-width
+    padding-top: 0
+    bottom: 0
+    right: 0
+    z-index: 1
+
 
 // -------------------------------------
 //   Modifiers
@@ -30,22 +43,5 @@
 //   Scaffolding
 // -------------------------------------
 
-.range-field
-  @extend .input-field
-  @extend .input-field--number
-  max-width: $b-whitespace*3
+// .structure-sub
 
-.range-label
-  @extend .input-label
-
-.range-slider
-  width: 100%
-
-.range-limit
-  font-size: $b-fontSize-aa
-
-.range-limit--min
-  float: left
-
-.range-limit--max
-  float: right

@@ -24,12 +24,14 @@ $accordian-triangle-width: $b-whitespace*0.75
 // -------------------------------------
 
 .accordion.is-closed
+  .accordion-btn--close
+    display: none
   .accordion-content
     max-height: 0
     +respond-to($bp-info)
       max-height: none
-  .accordion-btn--b
-    display: none
+        display: none
+
 
 // -------------------------------------
 //   Context
