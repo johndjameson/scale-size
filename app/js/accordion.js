@@ -20,10 +20,10 @@ var Accordion = {
   },
 
   closeSingleAccordion: function(el) {
-    $(el).parent().addClass('is-closed');
+    $(el).closest('.accordion').addClass('is-closed');
   },
 
   toggleSingleAccordion: function(el) {
-    $(el).parent().toggleClass('is-closed');
+    $(el).closest('.accordion').toggleClass('is-closed');
   }
 }

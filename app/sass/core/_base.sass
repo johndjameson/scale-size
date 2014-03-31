@@ -9,16 +9,17 @@
   box-sizing: border-box
 
 html
-  background: $c-background-light
+  background-color: $c-background-light
   color: $c-base
   font-family: $f-base
-  font-size: $b-fontSize
   height: 100%
   line-height: $b-lineHeight
+  +respond-to($bp-info)
+    background-color: $c-background
 
 body
-  font-size: 100%
   height: 100%
+
 
 // -------------------------------------
 //   Block Content
