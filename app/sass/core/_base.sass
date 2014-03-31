@@ -9,9 +9,9 @@
   box-sizing: border-box
 
 html
-  @extend .tfb
-  @extend .tcb
   background: $c-background-light
+  color: $c-base
+  font-family: $f-base
   font-size: $b-fontSize
   height: 100%
   line-height: $b-lineHeight
@@ -53,13 +53,11 @@ li
 
 h1, .h1,
 h2, .h2
-  @extend .mbm
-  @extend .mtm
-  @extend .tac
-  @extend .tch
-  @extend .tfh
-  @extend .tsi
-  @extend .twb
+  color: $c-primary
+  font-family: $f-heading
+  font-style: italic
+  text-align: center
+  text-decoration: none
   line-height: 1.2
 
 h1, .h1
@@ -75,14 +73,16 @@ h2, .h2
 // -------------------------------------
 
 a
-  @extend .twb
-  @extend .tch
   border-bottom: $b-border
   color: $c-primary-dark
   text-decoration: none
+  transition: $b-transition
   &:hover,
   &:focus
-    border-bottom-color: $c-highlight
+    border-color: $c-primary-dark
+  &:active
+    border-color: $c-primary-darker
+    color: $c-primary-darker
 
 abbr
   letter-spacing: 0.05em

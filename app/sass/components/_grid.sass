@@ -11,8 +11,8 @@
 //   Variables
 // -------------------------------------
 
-$grid-columns: 4 !default
-$grid-defaults: "m" 480px, "l" 800px !default
+$grid-columns: 2 !default
+$grid-defaults: "m" $bp-form, "l" $bp-settings !default
 $grid-gutter: $b-whitespace !default
 $grid-silent: false !default
 
@@ -28,13 +28,12 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 
 #{$grid-selector}grid
   @extend .group
-  @extend .db
+  display: block
   margin-left: -$grid-gutter / 2
   margin-right: -$grid-gutter / 2
 
 #{$grid-selector}grid-box
-  @extend .fl
-  -moz-box-sizing: border-box
+  float: left
   box-sizing: border-box
   margin: 0
   padding-left: $grid-gutter / 2
@@ -46,8 +45,9 @@ $grid-selector: if($grid-silent, unquote("%"), unquote("."))
 // -------------------------------------
 
 #{$grid-selector}grid-box--center
-  @extend .db
-  @extend .mhc
+  display: block
+  margin-left: auto
+  margin-right: auto
   float: none
 
 // -------------------------------------

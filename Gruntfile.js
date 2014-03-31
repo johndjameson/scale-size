@@ -50,7 +50,7 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           cwd: '<%= yeoman.app %>',
-          src: '**/*.html',
+          src: ['**/*.html', 'favicon.ico'],
           dest: '<%= yeoman.dist %>'
         }]
       }

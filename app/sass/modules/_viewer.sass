@@ -1,44 +1,37 @@
 // *************************************
 //
-//   Sidebar
-//   -> Hey, that name isn't semantic!
+//   Viewer
+//   -> Displays calculated ouput
 //
 // *************************************
 
-.sidebar
-  background-color: $c-background
+.viewer
+  padding-top: $b-whitespace
+  background-color: $c-background-light
   overflow: hidden
-  z-index: 1
-
-.sidebar--settings
-  padding: 0 $b-whitespace $b-whitespace
-  +respond-to($bp-settings)
-    bottom: 0
-    margin: 0
-    overflow-y: auto
-    position: fixed
-    right: 0
+  position: relative
+  &::after
+    content: ''
+    display: block
+    position: absolute
     top: 0
-    width: $b-sidebar-width
-    box-shadow: -2px 0 rgba($c-base, 0.25)
-
-.sidebar--info
+    bottom: 0
+    right: 0
+    width: 2px
+    background-image: linear-gradient(90deg, rgba($c-background-light, 0), $c-background-light)
   +respond-to($bp-settings)
     margin-right: $b-sidebar-width
   +respond-to($bp-info)
-    bottom: 0
-    box-shadow: 2px 0 rgba($c-base, 0.25)
-    left: 0
-    overflow: auto
-    position: fixed
-    top: 0
-    width: $b-sidebar-width
-
+    margin-left: $b-sidebar-width
+    overflow-x: hidden
+    overflow-y: auto
+    height: 100%
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
+// .structure--modifier
 
 // -------------------------------------
 //   States
@@ -55,4 +48,6 @@
 // -------------------------------------
 //   Scaffolding
 // -------------------------------------
+
+// .structure-sub
 
