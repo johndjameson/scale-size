@@ -31,8 +31,10 @@
 
 .input-group
   @extend .group
-  margin-bottom: $b-whitespace*2
+  margin-bottom: $b-whitespace
   position: relative
+  +respond-to($bp-colophon, min-height)
+    margin-bottom: $b-whitespace*2
 
 .input-label
   display: block
