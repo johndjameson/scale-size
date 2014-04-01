@@ -26,8 +26,8 @@ body
 // -------------------------------------
 
 p, ol, ul
-  @extend .mbm
-  @extend .mtf
+  margin-bottom: $b-whitespace
+  margin-top: 0
 
 ol, ul
   list-style: none
@@ -44,11 +44,12 @@ ul
       line-height: percentage(2/3)
       position: absolute
       right: 100%
+      top: 0.05em
       width: $b-whitespace
 
 li
-  @extend .mbxs
-  @extend .mtf
+  margin-bottom: $b-whitespace/4
+  margin-top: 0
 
 // ----- Header ----- //
 
