@@ -42,6 +42,12 @@ var ScaleSize = {
         return $this.select()
       }, 0);
     });
+
+    $('#tweet').on('click', function(e) {
+      e.preventDefault();
+
+      ScaleSize.openLink(this);
+    });
   },
 
   parseQuery: function() {
@@ -186,6 +192,14 @@ var ScaleSize = {
         'Check out my sweet scale on @scalesize http://scalesize.com/?' +
         ScaleSize.s.query
       )
+    );
+  },
+
+  openLink: function(el) {
+    window.open(
+      $(el).attr('href'),
+      'Scale_Size',
+      'status=yes,width=640,height=440,top=0,left=0'
     );
   },
 
