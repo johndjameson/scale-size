@@ -187,7 +187,7 @@ var ScaleSize = {
     );
 
     $('#tweet').attr('href',
-      'http://twitter.com/share?text=' +
+      'http://twitter.com/intent/tweet?text=' +
       encodeURIComponent(
         'Check out my sweet scale on @scalesize http://scalesize.com/?' +
         ScaleSize.s.query
