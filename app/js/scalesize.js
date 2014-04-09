@@ -4,8 +4,9 @@ var ScaleSize = {
 
   s: {
         textSize: 16,
-        altSize: 320,
+        altSize: 50,
         ratio: 1.6,
+        min: 8,
         max: 360,
         previewText: 'lorem ipsum dolor sit amet',
         query: '',
@@ -139,25 +140,21 @@ var ScaleSize = {
   },
 
   calculateSizes: function() {
-    var
-      sizes = [],
-      min = 8,
-      max = 360;
+    var sizes = [];
+
 
     function calc(size, asc) {
-      tempSize = size;
-
       if (asc) {
-        while (tempSize <= max) {
-          sizes.push(Math.round(tempSize));
+        while (size <= ScaleSize.s.max) {
+          sizes.push(Math.round(size));
 
-          tempSize *= ScaleSize.s.ratio;
+          size *= ScaleSize.s.ratio;
         }
       } else {
-        while (tempSize >= min) {
-          sizes.push(Math.round(tempSize));
+        while (size >= ScaleSize.s.min) {
+          sizes.push(Math.round(size));
 
-          tempSize /= ScaleSize.s.ratio;
+          size /= ScaleSize.s.ratio;
         }
       }
     }
