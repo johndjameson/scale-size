@@ -22,8 +22,9 @@ var ScaleSize = {
 
     // Settings
 
-    // Has to be 'change' to support keyboard input
-    $('#text_size, #alt_size, #ratio').on('change', function() {
+    // Has to be 'change' to support keyboard input,
+    // but tabindex is -1, so I'm using 'input' for pointer support
+    $('#text_size, #alt_size, #ratio').on('input', function() {
       ScaleSize.updateSizes('range');
     });
 
