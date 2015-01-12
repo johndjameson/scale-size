@@ -2,8 +2,8 @@
   "name": "scale-size",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.0",
-    "underscore": "~1.6.0"
+    "jquery": "2.x",
+    "underscore": "1.x"
   },
   "devDependencies": {}
 }
