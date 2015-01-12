@@ -1,7 +1,8 @@
-node_modules
-dist
-test
-.tmp
+# Files
+
 .sass-cache
-app/bower_components
-test/bower_components
+.DS_Store
+
+# Directories
+
+bower_components
