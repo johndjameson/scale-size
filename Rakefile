@@ -2,7 +2,9 @@ desc 'Generate flat files with Middleman'
 task :generate do
   puts '-- Generating site with Middleman --'
   system 'bundle exec middleman build --clean'
+  system 'echo "scalesize.com" > build/CNAME'
   cd 'build' do
+    system 'touch .nojekyll'
     system 'git init'
     system 'git remote add origin git@github.com:johndjameson/scale-size.git'
   end
