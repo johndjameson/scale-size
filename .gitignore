@@ -6,3 +6,5 @@
 # Directories
 
 bower_components
+
+/build
