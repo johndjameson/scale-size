@@ -17,6 +17,10 @@
     .row
       .well
 
-        %ul
-        - ( 5..20 ).each do | index |
-          %li{ style: "font-size: #{ index ** 1.5 }px" } Lorem ipsum dolor sit amet
+        %ul.scale
+          - ( 5..30 ).each do | size |
+            - size = ( size ** 1.6 ).round
+            %li.scale-item
+              %span.scale-item-label #{ size }px
+              %span.scale-item-preview{ style: "font-size: #{ size }px" }
+                Lorem ipsum dolor sit amet
