@@ -1,0 +1,44 @@
+// *************************************
+//
+//   Scale
+//   -> Enumeration of sizes
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .scale
+//   .scale-item
+//
+// *************************************
+
+.scale
+  @extend .lr
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.scale-item
+  align-items: center
+  display: flex
+  line-height: 1
+  margin-bottom: 20px
+  position: relative
+
+// Label
+
+.scale-item-label
+  box-sizing: border-box
+  flex-shrink: 0
+  font-size: $b-fontSize-xs
+  padding-right: 20px // FIXME: Magic number!
+  text-align: right
+  width: 50px // FIXME: Magic number!
+
+// Preview
+
+.scale-item-preview
+  white-space: nowrap
