@@ -2,6 +2,7 @@
 //
 //   Range
 //   -> Sliding user input
+//   CodePen: http://codepen.io/johndjameson/pen/MYmzGR/
 //
 // -------------------------------------
 //   Template (Haml)
@@ -19,7 +20,7 @@
   width: 100%
 
   &:focus
-    outline: none
+    outline: 0
 
 // ----- Webkit ----- //
 
@@ -42,9 +43,6 @@
   height: $range-thumb-height
   margin-top: ( $range-track-height - $range-thumb-height ) * 0.5
   width: $range-thumb-width
-
-.range:focus::-webkit-slider-runnable-track
-  background: $range-track--focus-background
 
 // ----- Firefox ----- //
 
@@ -79,16 +77,11 @@
   height: $range-track-height
   width: 100%
 
-.range::-ms-fill-lower
-  background: $range-track-background
-  border-radius: $range-track-borderRadius
-  border: $range-track-border
-  box-shadow: $range-track-boxShadow
-
+.range::-ms-fill-lower,
 .range::-ms-fill-upper
   background: $range-track-background
   border-radius: $range-track-borderRadius
-  border: $range-track-borderRadius
+  border: $range-track-border
   box-shadow: $range-track-boxShadow
 
 .range::-ms-thumb
@@ -99,9 +92,3 @@
   cursor: pointer
   height: $range-thumb-height
   width: $range-thumb-width
-
-.range:focus::-ms-fill-lower
-  background: $range-track-background
-
-.range:focus::-ms-fill-upper
-  background: $range-track-background
