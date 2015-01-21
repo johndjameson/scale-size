@@ -1,0 +1,81 @@
+// *************************************
+//
+//   Form
+//   -> User input environment
+//      CodePen: http://codepen.io/drewbarontini/pen/mbIwj
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %form.form
+//   %fieldset.form-field
+//     %label
+//       %span.form-label{ for: 'email' } Email
+//       %input.form-input{ type: 'email', id: 'email' }
+//
+// *************************************
+
+.form
+  margin-bottom: $b-space
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Condensed ----- //
+
+.form--condensed
+
+  .form-field
+    margin-bottom: $b-space-s
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Field ----- //
+
+.form-field
+  border: 0
+  margin-bottom: $b-space
+  padding: 0
+
+// Inline
+
+.form-field--inline
+
+  .form-btn
+    display: block
+    line-height: 2.9
+    min-width: 100%
+
+// ----- Input ----- //
+
+.form-input
+  background: $form-input-background
+  border-radius: $b-borderRadius
+  border: 0
+  box-shadow: inset $b-boxShadow
+  box-sizing: border-box
+  font-size: 100%
+  padding: $b-space-s
+  position: relative
+  transition: border-color 0.2s ease-in-out
+  width: 100%
+
+  &:focus
+    outline: none
+
+// ----- Label ----- //
+
+.form-label
+  display: block
+  font-size: $b-fontSize-m
+  font-weight: bold
+  margin-bottom: $b-space-xs
+
+// ----- Select ----- //
+
+.form-select
+  min-width: em(200px)
