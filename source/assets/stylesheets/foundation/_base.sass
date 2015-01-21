@@ -60,12 +60,12 @@ h4, .h4
 a
   border-bottom: $b-border
   color: $c-highlight
+  font-weight: bold
   text-decoration: none
+  transition: $b-transition
 
-  &:hover,
-  &:focus
+  +state
     border-bottom-color: $c-highlight
-    color: $c-subdue
 
 // ----- Images ----- //
 
