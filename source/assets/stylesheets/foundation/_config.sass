@@ -51,7 +51,9 @@ $form-input-background: $c-background
 
 // ----- Structures ----- //
 
-// ...
+$range-thumb-background: $c-background
+$range-track-background: $iron
+$range-track--focus-background: $range-track-background
 
 // -------------------------------------
 //   Base
@@ -114,4 +116,19 @@ $g-selector: if( $g-silent, unquote( '%' ), unquote( '.' ) )
 //   Structures
 // -------------------------------------
 
-// ...
+// ----- Range ----- //
+
+// Track
+
+$range-track-height: 10px
+$range-track-border: 0
+$range-track-borderRadius: $range-track-height * 0.5
+$range-track-boxShadow: inset $b-boxShadow
+
+// Thumb
+
+$range-thumb-border: 0
+$range-thumb-borderRadius: 50%
+$range-thumb-boxShadow: $b-boxShadow
+$range-thumb-height: 30px
+$range-thumb-width: $range-thumb-height
