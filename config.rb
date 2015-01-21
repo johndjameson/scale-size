@@ -13,6 +13,10 @@ end
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, footnotes: true, smartypants: true
 
+compass_config do | config |
+  config.line_comments = false
+end
+
 # Alias directories
 set :css_dir,    'assets/stylesheets'
 set :js_dir,     'assets/javascripts'
