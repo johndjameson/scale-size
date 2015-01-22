@@ -16,6 +16,7 @@
 # -------------------------------------
 
 ##= require components/inputSet
+##= require components/scale
 
 # -------------------------------------
 #   Document Ready
