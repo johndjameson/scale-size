@@ -5,7 +5,10 @@
 #
 # *************************************
 #
-# @param element { jQuery object }
+# @param element          { jQuery object }
+# @param itemClass        { string }
+# @param itemLabelClass   { string }
+# @param itemPreviewClass { string }
 #
 # *************************************
 
@@ -17,10 +20,12 @@
 
   _settings      = {}
   _defaultValues =
-    base      : 16
     alternate : 30
+    base      : 16
     ratio     : 1.6
-    text      : 'Lorem ipsum dolor sit amet'
+    minimum   : 8
+    maximum   : 360
+    text      : 'lorem ipsum dolor sit amet'
 
   # -------------------------------------
   #   Initialize
@@ -28,7 +33,10 @@
 
   init = ( options ) ->
     _settings = $.extend
-      element : $( '.js-scale' )
+      element          : $( '.js-scale' )
+      itemClass        : 'scale-item'
+      itemLabelClass   : 'scale-item-label'
+      itemPreviewClass : 'scale-item-preview'
     , options
 
     updateSizes()
@@ -36,21 +44,43 @@
   # -------------------------------------
   #   Update Sizes
   # -------------------------------------
+  #
+  # @param alternate { integer }
+  # @param base      { integer }
+  # @param ratio     { float }
+  # @param text      { string }
+  #
+  # -------------------------------------
 
   updateSizes = ( values ) ->
     values = $.extend( _defaultValues, values )
+    sizes  = []
     text   = ''
 
     for key in [ 'base', 'alternate', 'ratio' ]
       values[ key ] = parseFloat( values[ key ], 10 )
 
-    # TODO: Make this work.
+    calculateSizes = ( size, ascending ) ->
+      if ascending
+        while size <= values.maximum
+          sizes.push( Math.round( size ) )
+          size *= values.ratio
+      else
+        while size >= values.minimum
+          sizes.push( Math.round( size ) )
+          size /= values.ratio
 
-    for index in [ values.base .. values.alternate ]
+    for value in [ values.base, values.alternate ]
+      for direction in [ true, false ]
+        calculateSizes( value, direction )
+
+    sizes =  _.uniq( _.sortBy( sizes, ( num ) -> return num ) )
+
+    for size in sizes
       text += """
-        <li class='scale-item'>
-          <span class='scale-item-label'>#{ index }px</span>
-          <span class='scale-item-preview' style='font-size: #{ index }px;'>#{ values.text }</span>
+        <li class='#{ _settings.itemClass }'>
+          <span class='#{ _settings.itemLabelClass }'>#{ size }px</span>
+          <span class='#{ _settings.itemPreviewClass }' style='font-size: #{ size }px;'>#{ values.text || '&nbsp;' }</span>
         </li>
       """
 
@@ -68,4 +98,10 @@
 # -------------------------------------
 #
 # ScaleSize.Scale.init()
+#
+# ScaleSize.Scale.updateSizes()
+#   alternate : 24
+#   base      : 16
+#   ratio     : 1.5
+#   text      : 'This is sample text'
 #
