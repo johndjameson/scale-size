@@ -9,26 +9,25 @@
 #   Base
 # -------------------------------------
 
-##= require scalesize
+#= require scalesize
 
 # -------------------------------------
 #   Components
 # -------------------------------------
 
-##= require components/inputSet
-##= require components/scale
+#= require_tree ./components
 
 # -------------------------------------
 #   Document Ready
 # -------------------------------------
 
-##= require domready
+#= require domready
 
 # -------------------------------------
 #   Self
 # -------------------------------------
 
-##= require_self
+#= require_self
 
 # -------------------------------------
 #   Inbox
