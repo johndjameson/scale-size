@@ -5,5 +5,5 @@
 #
 # *************************************
 
-##= require jquery
-##= require underscore
+#= require jquery
+#= require underscore
